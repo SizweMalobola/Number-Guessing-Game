@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  /* text-align: center; */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: azure;
+}
+.container {
+  /* height: 52.9vh; */
+  width: 35%;
+  background-color: white;
+  /* padding: 1rem; */
+  border: 1px solid black;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+}
+/* header  */
+.container .header {
+  margin-top: 0;
+  padding: 1rem 1rem 0 1rem;
+}
+.container .header h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.container .header p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+/* content  */
+.container .content {
+  background-color: rgb(230, 230, 230);
+  padding: 1rem;
+  border-radius: 7px;
+}
+.container .content h1 {
+  margin-bottom: 1rem;
+}
+.container .content form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.8rem;
+}
+.container .content input[type="number"] {
+  height: 4rem;
+  width: 70%;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.container .content input[type="button"] {
+  font-size: 1.1rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  border: solid 1px black;
+}
+/* game status */
+.game-status {
+  font-size: 1.1rem;
+}
+.game-status .previous-guesses {
+  visibility: hidden;
+  margin-bottom: 1rem;
+}
+.game-status .guess-status {
+  margin-bottom: 1rem;
+  visibility: hidden;
+
+  /* padding: 1rem; */
+  /* background-color: red; */
+}
+.game-status .guess-hint {
+  margin-bottom: 1rem;
+  visibility: hidden;
+}
+
+/* reset button  */
+#restart {
+  font-size: 1.1rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  border: solid 1px black;
+  visibility: hidden;
+}

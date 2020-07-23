@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Number Guessing Game</title>
+  </head>
+  <body>
+      <div class="container">
+          <div class="header">
+              <h3>Number Guessing Game</h1>
+              <p>Try guessing a random number between 1 and 200.<br>You have 10 attempts to guess the right number.</p>
+          </div>
+          <div class="content">
+              <h1>Give It A Guess</h1>
+              <form>
+                  <input type="number" name="guess" id="guessInput">
+                  <input type="button" value="Submit Guess" id="submitBtn">
+              </form>
+              <div class="game-status">
+                  <div class="previous-guesses">Previous Guesses: </div>
+                  <div class="guess-status"></div>
+                  <div class="guess-hint"></div>
+              </div>
+          </div>
+          
+      </div>
+      <input type="button" value="Start New Game" id="restart">
+    <script src="/logic.js"></script>
+  </body>
+</html>
